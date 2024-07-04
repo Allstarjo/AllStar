@@ -4,7 +4,7 @@
 #include <iostream>
 
 
-Shape::Shape(Shader* shader, GlDrawType glDrawType, float vertices[], unsigned int indices[], float sizeofVertices, float sizeOfIndices)
+Shape::Shape(Shader* shader, GlDrawType glDrawType, float vertices[], unsigned int indices[], int sizeofVertices, int sizeOfIndices)
 {
 	m_glDrawType = glDrawType;
 	m_shader = CreateRectangle(m_shader, glDrawType, vertices, indices, sizeofVertices, sizeOfIndices);
@@ -12,7 +12,7 @@ Shape::Shape(Shader* shader, GlDrawType glDrawType, float vertices[], unsigned i
 };
 
 Shader* Shape::CreateRectangle(Shader* shader, GlDrawType glDrawType,
-	float vertices[], unsigned int indices[], float sizeofVertices, float sizeOfIndices)
+	float vertices[], unsigned int indices[], int sizeofVertices, int sizeOfIndices)
 {
 	ConfigureVertex(vertices, indices, sizeofVertices, sizeOfIndices);
 	return shader;
@@ -35,7 +35,7 @@ void Shape::Draw()
 
 };
 
-void Shape::ConfigureVertex(float vertices[],unsigned int indices[], float sizeofVertices, float sizeOfIndices)
+void Shape::ConfigureVertex(float vertices[],unsigned int indices[], int sizeofVertices, int sizeOfIndices)
 {	
 
 	glGenVertexArrays(1, &VAO);

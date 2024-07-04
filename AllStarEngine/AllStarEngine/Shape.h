@@ -12,12 +12,12 @@ enum GlDrawType
 class Shape
 {
 public:
-	Shape(Shader* shader, GlDrawType glDrawType, float vertices[], unsigned int indices[], float sizeofVertices, float sizeOfIndices);
+	Shape(Shader* shader, GlDrawType glDrawType, float vertices[], unsigned int indices[], int sizeofVertices, int sizeOfIndices);
 	Shader* CreateRectangle(Shader* shader, GlDrawType glDrawType, float vertice[],
-		unsigned int indices[], float sizeofVertices, float sizeOfIndices);
+		unsigned int indices[], int sizeofVertices, int sizeOfIndices);
 	void Draw();
 	void deleteRemainig();
-	void ConfigureVertex(float vertices[], unsigned int indices[], float sizeofVertices, float sizeOfIndices);
+	void ConfigureVertex(float vertices[], unsigned int indices[], int sizeofVertices, int sizeOfIndices);
 
 private:
 	unsigned int VAO, VBO, EBO;
