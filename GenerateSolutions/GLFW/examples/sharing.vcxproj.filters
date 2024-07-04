@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\jonat\Documents\AllStar\SourceLibrary\glfw-3.4\examples\sharing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\jonat\Documents\AllStar\SourceLibrary\glfw-3.4\deps\glad\gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jonat\Documents\AllStar\SourceLibrary\glfw-3.4\examples\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\jonat\Documents\AllStar\SourceLibrary\glfw-3.4\examples\glfw.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{49FC6099-0E4A-3FBA-9AEB-95093135A88A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A94293D7-F77D-3722-BCB9-7BF2A3276DF4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

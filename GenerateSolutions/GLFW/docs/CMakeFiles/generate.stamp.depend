@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Users/jonat/Documents/AllStar/Software/cmake-3.29.6-windows-x86_64/share/cmake-3.29/Modules/FindDoxygen.cmake
+C:/Users/jonat/Documents/AllStar/Software/cmake-3.29.6-windows-x86_64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake
+C:/Users/jonat/Documents/AllStar/Software/cmake-3.29.6-windows-x86_64/share/cmake-3.29/Modules/FindPackageMessage.cmake
+C:/Users/jonat/Documents/AllStar/SourceLibrary/glfw-3.4/docs/CMakeLists.txt

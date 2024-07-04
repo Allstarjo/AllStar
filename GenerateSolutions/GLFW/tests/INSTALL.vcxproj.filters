@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jonat\Documents\AllStar\GenerateSolutions\GLFW\CMakeFiles\8af7c64f0a0e2f7a55c289c6a0bdd4f6\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1411629D-461E-39D9-85AC-261659E464C5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
