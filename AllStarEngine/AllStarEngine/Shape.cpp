@@ -6,7 +6,7 @@
 
 Shape::Shape(Shader* shader, GlDrawType glDrawType, float vertices[], unsigned int indices[], float sizeofVertices, float sizeOfIndices)
 {
-
+	m_glDrawType = glDrawType;
 	m_shader = CreateRectangle(m_shader, glDrawType, vertices, indices, sizeofVertices, sizeOfIndices);
 
 };
@@ -45,10 +45,10 @@ void Shape::ConfigureVertex(float vertices[],unsigned int indices[], float sizeo
 	glBindVertexArray(VAO);
 
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	glBufferData(GL_ARRAY_BUFFER, sizeofVertices, vertices, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeofVertices, vertices, m_glDrawType);
 
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeOfIndices, indices, GL_STATIC_DRAW);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeOfIndices, indices, m_glDrawType);
 
 
 	// note that this is allowed, the call to glVertexAttribPointer registered VBO as the vertex attribute's bound vertex buffer object so afterwards we can safely unbind
